@@ -1,3 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300&family=Mulish:wght@300&display=swap');
+
+/* font-family: 'Merriweather', serif;
+font-family: 'Mulish', sans-serif; */
+:root{
+    --primary-font:'Merriweather', serif;
+    --secondary-font:'Mulish', sans-serif;
+    --text-color:#0D1C52;
+}
 * {
   margin: 0;
   padding: 0;
@@ -42,4 +51,34 @@ body {
   left: 422px;
   top: 152px;
   z-index: 1;
+}
+
+form h1{
+    font-size: 32px;
+    font-weight: bold;
+    padding: 8% 10% 5% 10%;
+    font-family: var(--primary-font);
+    color: var(--text-color);
+}
+
+
+.frame-1{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 0 10% 5% 10%;
+    font-family: var(--secondary-font);
+    color: var(--text-color);
+}
+
+.frame-1 label{
+    margin: 1% 0;
+    /* 14 bold mulish; */
+    font-size:14px;
+    font-weight: bold;
+    
+}
+
+.frame-1 input{
+    padding: 2%;
 }
