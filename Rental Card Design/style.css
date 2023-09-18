@@ -1,17 +1,28 @@
-@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300&family=Mulish:wght@300&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:wght@300&family=Mulish:wght@300&display=swap");
 
-/* font-family: 'Merriweather', serif;
-font-family: 'Mulish', sans-serif; */
-:root{
-    --primary-font:'Merriweather', serif;
-    --secondary-font:'Mulish', sans-serif;
-    --text-color:#0D1C52;
+/* Utility Classes */
+:root {
+  --primary-font: "Merriweather", serif;
+  --secondary-font: "Mulish", sans-serif;
+  --text-color: #0d1c52;
 }
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
+
+.flex {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  /* padding: 0 10% 5% 10%; */
+  font-family: var(--secondary-font);
+  color: var(--text-color);
+}
+
+/* BODY OF THE PAGE */
 
 body {
   display: flex;
@@ -19,6 +30,8 @@ body {
   height: 100%;
   background-color: #e5e5e5;
 }
+
+/* THE Yellow Box */
 
 .box-1 {
   width: 484px;
@@ -30,6 +43,8 @@ body {
   top: 43px;
 }
 
+/* The Orange Box */
+
 .box-2 {
   width: 300px;
   height: 480px;
@@ -39,6 +54,8 @@ body {
   left: 1053px;
   border-radius: 20%;
 }
+
+/* Main Section and form of the page */
 
 .main-section {
   width: 756px;
@@ -53,32 +70,33 @@ body {
   z-index: 1;
 }
 
-form h1{
-    font-size: 32px;
-    font-weight: bold;
-    padding: 8% 10% 5% 10%;
-    font-family: var(--primary-font);
-    color: var(--text-color);
+form h1 {
+  font-size: 32px;
+  font-weight: bold;
+  padding: 8% 10% 5% 10%;
+  font-family: var(--primary-font);
+  color: var(--text-color);
 }
 
+/* First Frame of the form */
 
-.frame-1{
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    padding: 0 10% 5% 10%;
-    font-family: var(--secondary-font);
-    color: var(--text-color);
+.frame-1 label {
+  margin: 1% 0;
+  font-size: 14px;
+  font-weight: bold;
 }
 
-.frame-1 label{
-    margin: 1% 0;
-    /* 14 bold mulish; */
-    font-size:14px;
-    font-weight: bold;
-    
+.frame-1 input {
+  padding: 2%;
 }
 
-.frame-1 input{
-    padding: 2%;
+.frame-1-1 {
+  padding: 0 10% 1% 10%;
+}
+
+.frame-1-2 {
+  padding: 0 10%;
+  font-family: var(--secondary-font);
+  color: var(--text-color);
+  display: flex;
 }
