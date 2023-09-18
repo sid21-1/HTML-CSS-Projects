@@ -17,7 +17,6 @@
   display: flex;
   flex-direction: column;
   width: 100%;
-  /* padding: 0 10% 5% 10%; */
   font-family: var(--secondary-font);
   color: var(--text-color);
 }
@@ -100,3 +99,24 @@ form h1 {
   color: var(--text-color);
   display: flex;
 }
+
+/* Frame 2 date picker */
+
+.date-picker{
+  display: flex;
+}
+
+.frame-2{
+  padding: 0 10% 1% 10%;
+  margin-top: 5%;
+  font-weight: bolder;
+}
+
+.frame-2-1 input{
+  margin:12px 12px 12px 0px;
+}
+
+.frame-2-2 input{
+  margin:12px 0px 12px 0px;
+}
+
