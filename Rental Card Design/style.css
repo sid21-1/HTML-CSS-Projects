@@ -124,7 +124,7 @@ form h1 {
   margin:12px 0px 12px 0px;
 }
 
-
+/* Frame 3  */
 .frame-3 {
   padding: 0 10%;
   font-family: var(--secondary-font);
@@ -136,5 +136,19 @@ form h1 {
 .frame-3 label{
   margin: 0 1%;
 }
+
+/* Frame 4 Checkboxes */
+.checked-boxes{
+  padding: 0 10%;
+  font-family: var(--secondary-font);
+  color: var(--text-color);
+  font-weight: bold;
+  margin: 3% 0;
+}
+
+.checked-boxes p{
+  padding: 2% 0;
+}
+
 
 
