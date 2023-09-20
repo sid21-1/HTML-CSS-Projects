@@ -1,0 +1,61 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #0a0c1b;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; 
+}
+
+/* Main Container */
+
+.container {
+  background-color: #1c1938;
+  display: flex;
+  width: 80%;
+}
+
+
+/* Left part of the container  */
+
+
+.content-area ,h1,p{
+    color: #FDFFFF;
+}
+
+.content-area .heading{
+    padding: 10% 25% 2% 11%;
+    text-align: start;
+    font-size: 20px;
+}
+.content-area .paragraph{
+    padding: 5% 35% 2% 11%;
+    text-align: start;
+    font-size: 18px;
+}
+
+.container .symbols{
+    display: flex;
+}
+
+.container .symbols .item{
+    padding: 7% 2% 0% 11%;
+}
+
+
+
+.container span{
+    color: #A560D3 ;
+}
+
+/* right part of the container */
+
+img{
+    width: 50%;
+    object-fit: contain;
+    object-position: center;
+}
