@@ -149,3 +149,18 @@ a {
   justify-content: center;
   align-items: center;
 }
+
+.nav-item{
+  margin-right: 1rem;
+}
+
+.dark-badge{
+  background-color: #000;
+  color: #fff;
+}
+
+@media (max-width:1000px) {
+  .hide{
+    display: none;
+  }
+}
