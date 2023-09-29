@@ -131,7 +131,7 @@ a {
   width: fit-content;
 }
 
-.sticky-nav{
+.sticky-nav {
   position: sticky;
   top: 0;
   background-color: #121212;
@@ -142,32 +142,32 @@ a {
   z-index: 1;
 }
 
-.sticky-nav-icons{
+.sticky-nav-icons {
   margin-left: 0.75rem;
 }
 
-.sticky-nav-options{
+.sticky-nav-options {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.nav-item{
+.nav-item {
   margin-right: 1rem;
 }
 
-.dark-badge{
+.dark-badge {
   background-color: #000;
   color: #fff;
 }
 
-@media (max-width:1000px) {
-  .hide{
+@media (max-width: 1000px) {
+  .hide {
     display: none;
   }
 }
 
-.card{
+.card {
   background-color: #232323;
   width: 150px;
   border-radius: 0.5rem;
@@ -176,35 +176,72 @@ a {
   margin-top: 1rem;
 }
 
-.cards-container{
+.cards-container {
   display: flex;
   flex-wrap: wrap;
 }
 
-.card-img{
+.card-img {
   width: 100%;
   border-radius: 0.5rem;
 }
 
-.card-title{
+.card-title {
   font-weight: 600;
 }
 
-.card-info{
+.card-info {
   font-size: 0.85rem;
   opacity: 0.5;
 }
 
-.footer{
+.footer {
   height: 300px;
-  display:flex;
+  display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.line{
+.line {
   width: 90%;
   height: 30%;
-  border-top:1px solid white;
+  border-top: 1px solid white;
   opacity: 0.4;
+}
+
+.music-player {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.album {
+  width: 25%;
+  /* background-color: red; */
+}
+
+.player {
+  width: 50%;
+  /* background-color: green; */
+}
+
+.controls {
+  width: 25%;
+  /* background-color: blue; */
+}
+
+.player-controls {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.player-control-icon {
+  height: 1rem;
+  margin-right: 1.75rem;
+  opacity: 0.7;
+}
+
+.player-control-icon:hover {
+  opacity: 1;
 }
