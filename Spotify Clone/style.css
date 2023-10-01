@@ -285,7 +285,7 @@ a {
 
 .progress-bar::-webkit-slider-runnable-track {
   background-color: #ddd;
-  border-radius: 100opx;
+  border-radius: 100px;
   height: 0.2rem;
 }
 
@@ -302,5 +302,32 @@ a {
 
 .controls {
   width: 25%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   /* background-color: blue; */
+}
+
+.controls img {
+  height: 1.55rem;
+  width: 1.55rem;
+  margin-right: 0.75rem;
+  cursor: pointer;
+}
+
+.volume-controller {
+  width: 20%;
+  appearance: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.volume-controller::-webkit-slider-thumb {
+  appearance: none;
+}
+
+.volume-controller::-webkit-slider-runnable-track {
+  background-color: #ddd;
+  border-radius: 100px;
+  height: 0.2rem;
 }
