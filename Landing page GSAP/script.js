@@ -1,9 +1,24 @@
-// gsap.to(".header-left h1,p",{
-//     color:"red",
-//     duration:2
-// })
+let t1 = gsap.timeline();
 
-gsap.from(".header-left h1,p",{
-    color:"red",
-    duration:2
-})
+t1
+    .from(".banner-text",{
+        opacity: 0,
+        y: 20,
+    })
+
+    .from("nav", {
+        opacity: 0,
+        y: 20,
+    })
+
+    .from(".header-left",{
+        opacity:0,
+        scale:1.3,
+        duration:1
+    })
+
+    .from(".header-right",{
+        opacity:0,
+        scale:1.3,
+        duration:1
+    })
