@@ -1,4 +1,4 @@
-gsap.from(".header-left h1,p",{
-    opacity:0,
+gsap.to(".header-left h1,p",{
+    color:"red",
     duration:2
 })
