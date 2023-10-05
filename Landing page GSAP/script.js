@@ -37,3 +37,18 @@ gsap.from(".features-section",{
     duration:1,
     delay:1
 })
+
+gsap.from(".big-feature-section",{
+    scrollTrigger:{
+        trigger:".big-feature-section",
+        scroller:"body",
+        markers:true,
+        // start:"top 80%",
+        // bottom:" bottom 10%",
+        // scrub:true,
+    },
+    opacity:0,
+    scale:1.3,
+    duration:1,
+    delay:1
+})
