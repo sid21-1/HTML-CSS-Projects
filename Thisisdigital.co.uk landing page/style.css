@@ -10,126 +10,188 @@ body {
   height: 100%;
 }
 
-#main{
-    height: 100%;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+#main {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-#main>h1{
-    font-size: 5.4vw;
-    /* background-color: red; */
-    width: 60%;
-    font-weight: 100;
-    text-align: center;
-    text-transform:capitalize;
-    position: relative;
-    z-index: 2;
+#main > h1 {
+  font-size: 5.4vw;
+  /* background-color: red; */
+  width: 60%;
+  font-weight: 100;
+  text-align: center;
+  text-transform: capitalize;
+  position: relative;
+  z-index: 2;
 }
 
-#main>h1::after{
-    content: "";
+#main > h1::after {
+  content: "";
+  position: absolute;
+  width: 35%;
+  height: 16px;
+  background-image: url(https://thisisdigital.co.uk/dist/images/underline-green.svg);
+  bottom: -5%;
+  left: 50%;
+  background-size: cover;
+  transform: translate(-50%, 0);
+}
+
+#main #img1 {
+  height: 500px;
+  width: 380px;
+  position: absolute;
+  left: 10%;
+  top: 15%;
+}
+
+#main #img2 {
+  height: 220px;
+  width: 250px;
+  position: absolute;
+  right: 25%;
+  top: 18%;
+}
+
+#main #img3 {
+  height: 210px;
+  width: 200px;
+  position: absolute;
+  right: 7%;
+  bottom: 6%;
+}
+
+#main img {
+  transition: margin 0.8s ease;
+}
+
+#main img:hover {
+  margin-top: -10px;
+}
+
+#nav {
+  z-index: 4;
+  height: 100px;
+  width: 100%;
+  background-color: #ffffff;
+  position: fixed;
+  top: 0;
+  /* background-color: red; */
+  display: flex;
+  padding: 0 40px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#nav > h1 {
+  font-size: 31px;
+  font-weight: 100;
+}
+
+#nav #part2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#nav #part2 a {
+  text-decoration: none;
+  color: #222;
+  margin: 20px;
+}
+
+#nav #part2 a:nth-last-child(1) {
+  /* background-color: yellow; */
+  position: relative;
+  padding: 7px 18px;
+  overflow: hidden;
+  border-radius: 50px;
+  border: 1px solid #000;
+}
+
+#nav #part2 a:nth-last-child(1) #green {
+  width: 100%;
+  height: 100%;
+  background-color: springgreen;
+  position: absolute;
+  top: 0;
+  left: -100%;
+  transition: left 0.4s ease-in;
+}
+
+#nav #part2 a:nth-last-child(1):hover #green {
+  left: 0;
+}
+
+#nav #part2 a:nth-last-child(1) h5 {
+  font-weight: 100;
+  z-index: 2;
+  position: relative;
+}
+
+#part3 {
+  height: 70vh;
+  width: 100%;
+  background-color: #000;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  flex-direction: column;
+}
+
+#part3 h5 {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+#part3 h1 {
+  font-size: 60px;
+  margin: 30px 0;
+  width: 70%;
+  text-align: center;
+  font-weight: 100;
+  position: relative;
+}
+
+#part3 h1::after{
+    content: '';
     position: absolute;
-    width: 35%;
-    height: 16px;
-    background-image: url(https://thisisdigital.co.uk/dist/images/underline-green.svg);
-    bottom: -5%;
-    left: 50%;
-    background-size: cover;
-    transform: translate(-50%, 0);
+    height: 75px;
+    width: 230px;
+    bottom: 0;
+    background-image: url(https://thisisdigital.co.uk/dist/images/circle-green.svg);
+    left: 36%;
 }
 
-#main #img1{
-    height: 500px;
-    width: 380px;
-    position: absolute;
-    left: 10%;
-    top: 15%;
+#About-us {
+  display: flex;
+  align-items: center;
 }
 
-#main #img2{
-    height: 220px;
-    width: 250px;
-    position: absolute;
-    right: 25%;
-    top: 18%;
+#About-us > h4 {
+  font-size: 30px;
+  font-weight: 500;
 }
 
-#main #img3{
-    height: 210px;
-    width: 200px;
-    position: absolute;
-    right: 7%;
-    bottom: 6%;
+#green-div {
+  height: 40px;
+  width: 80px;
+  border: 2px solid #fff;
+  border-radius: 50px;
+  margin: 20px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-#main img{
-    transition: margin 0.8s ease;
-}
-
-#main img:hover{
-    margin-top: -10px;
-}
-
-
-#nav{
-    height: 100px;
-    width: 100%;
-    position: fixed;
-    top: 0;
-    /* background-color: red; */
-    display: flex;
-    padding: 0 40px;
-    align-items: center;
-    justify-content: space-between;
-}
-
-#nav>h1{
-    font-size: 31px;
-    font-weight: 100;
-
-}
-
-#nav #part2{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-}
-
-#nav #part2 a{
-    text-decoration: none;
-    color: #222;
-    margin: 20px;
-}
-
-#nav #part2 a:nth-last-child(1){
-    /* background-color: yellow; */
-    position: relative;
-    padding: 7px 18px;
-    overflow: hidden;
-    border-radius: 50px;
-    border: 1px solid #000;
-}
-
-#nav #part2 a:nth-last-child(1) #green{
-    width: 100%;
-    height: 100%;
-    background-color: springgreen;
-    position: absolute;
-    top: 0;
-    left: -100%;
-    transition: left 0.4s ease-in;
-}
-
-#nav #part2 a:nth-last-child(1):hover #green{
-    left: 0;
-}
-
-#nav #part2 a:nth-last-child(1) h5{
-    font-weight: 100;
-    z-index: 2;
-    position: relative;
+#About-us img{
+    rotate: 90deg;
+    height: 40px;
 }
